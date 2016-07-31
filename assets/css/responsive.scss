@@ -1,0 +1,53 @@
+/* --- RESPONSIVE --- */
+
+$screenBreakpoints: (
+	sm: 320px,
+	md: 480px,
+	lg: 768px,
+	xl: 1024px
+);
+
+@mixin breakpoint($size) {  
+	@media (min-width: map-get($screenBreakpoints, $size)) {
+		@content;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1120px) {
+	#contact_wrapper .forminput { width: 40%; }
+	#contact_wrapper textarea.forminput { width: 80.3%; }
+}
+
+@media (min-width: 768px) {
+	.modal-dialog { width: 600px;  margin: 100px auto; }
+}
+
+@media (max-width: 768px) {
+
+	#top_section { position: relative; }
+	#top_section #site_name { float: left; }
+	#nav_wrapper { float: right; background: transparent; position: absolute; width: 100%; }
+	#main_menu { background-color: #333; background-image: linear-gradient(145deg, #333, #111); }
+	
+	#nav_wrapper nav { position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 0; width: 256px; overflow-y: auto; -webkit-overflow-scrolling: touch; left: -256px; z-index: 100; display: none; }
+	#top_section ul li { display: block; text-align: left; padding: 5% 0 5% 15%; border-bottom: 1px solid #3c3c3c; }
+	#top_section ul li:first-of-type { display: block; padding: 10% 10% 10% 15%; font-size: 30px; background: #3c3c3c; }
+
+	#mobile_trigger { display: block; position: absolute; right: 0; top: 0; background: transparent url(../images/mobilenav.png) 88% 50% no-repeat; height: 60px; width: 85px; }
+
+	#services_wrapper .services_highlights div, #services_wrapper .services_highlights div:nth-child(2) { display: block; margin: 0 auto 5%; }
+	#mid_wrapper #highlights div { text-align: center; border-bottom: 1px solid #efefef; padding-bottom: 5%; }
+	#mid_wrapper #highlights div:nth-child(3) { border-bottom: none; }
+	
+	#contact_wrapper .forminput, #contact_wrapper textarea.forminput { width: 100%; }
+
+	footer { text-align: center; }
+}
+
+@media (max-width: 430px) {
+
+	#header_wrapper h1 { font-size: 7vw; }
+	#top_section #site_name { display: none; }
+	.btn-group-lg>.btn, .btn-lg { padding: 4%; }
+
+}

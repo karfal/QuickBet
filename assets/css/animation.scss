@@ -1,0 +1,126 @@
+/* --- ANIMATIONS --- */
+
+@keyframes backgroundColorChange {
+    0%    {background: $backgroundColour3;}
+    100%  {background: $backgroundColour2;}
+}
+
+@-webkit-keyframes backgroundColorChange {
+    0%    {background: $backgroundColour3;}
+    100%  {background: $backgroundColour2;}
+}
+
+@-moz-keyframes backgroundColorChange {
+    0%    {background: $backgroundColour3;}
+    100%  {background: $backgroundColour2;}
+}
+
+@-o-keyframes backgroundColorChange {
+    0%    {background: $backgroundColour3;}
+    100%  {background: $backgroundColour2;}
+}
+
+@keyframes backgroundColorChangeOposite {
+    0%    {background: $backgroundColour2;}
+    100%  {background: $backgroundColour3;}
+}
+
+@-webkit-keyframes backgroundColorChangeOposite {
+    0%    {background: $backgroundColour2;}
+    100%  {background: $backgroundColour3;}
+}
+
+@-moz-keyframes backgroundColorChangeOposite {
+    0%    {background: $backgroundColour2;}
+    100%  {background: $backgroundColour3;}
+}
+
+@-o-keyframes backgroundColorChangeOposite {
+    0%    {background: $backgroundColour2;}
+    100%  {background: $backgroundColour3;}
+}
+
+
+/*
+--- ENABLE POSITION RELATIVE ON ELEMENT TO PERFORM SLIDING EFFECT ---
+*/
+@keyframes buttonAnimation {
+	0%		{transform: rotate(0deg); left:0px;}
+	25%		{transform: rotate(20deg); left:0px;}
+	50%		{transform: rotate(0deg); left:500px;}
+	55%		{transform: rotate(0deg); left:500px;}
+	70%		{transform: rotate(0deg); left:500px; background: $backgroundColour3;}
+	100%	{transform: rotate(-360deg); left:0px;}
+}
+
+@-webkit-keyframes buttonAnimation {
+	0%		{-webkit-transform: rotate(0deg); left:0px;}
+	25%		{-webkit-transform: rotate(20deg); left:0px;}
+	50%		{-webkit-transform: rotate(0deg); left:500px;}
+	55%		{-webkit-transform: rotate(0deg); left:500px;}
+	70%		{-webkit-transform: rotate(0deg); left:500px; background: $backgroundColour3;}
+	100%	{-webkit-transform: rotate(-360deg); left:0px;}
+}
+
+@-moz-keyframes buttonAnimation {
+	0%   {-moz-transform: rotate(0deg); left:0px;}
+	25%  {-moz-transform: rotate(20deg); left:0px;}
+	50%  {-moz-transform: rotate(0deg); left:500px;}
+	55%  {-moz-transform: rotate(0deg); left:500px;}
+	70%  {-moz-transform: rotate(0deg); left:500px; background: $backgroundColour3;}
+	100% {-moz-transform: rotate(-360deg); left:0px;}
+}
+
+@-o-keyframes buttonAnimation {
+	0%   {transform: rotate(0deg); left:0px;}
+	25%  {transform: rotate(20deg); left:0px;}
+	50%  {transform: rotate(0deg); left:500px;}
+	55%  {transform: rotate(0deg); left:500px;}
+	70%  {transform: rotate(0deg); left:500px; background: $backgroundColour3;}
+	100% {transform: rotate(-360deg); left:0px;}
+}
+
+
+@keyframes pulseAnimation {
+	0%   { transform: scale(1); }
+	30%  { transform: scale(1); }
+	40%  { transform: scale(1.08); }
+	50%  { transform: scale(1); }
+	60%  { transform: scale(1); }
+	70%  { transform: scale(1.05); }
+	80%  { transform: scale(1); }
+	100% { transform: scale(1); }
+}
+
+@-webkit-keyframes pulseAnimation {
+	0%   { transform: scale(1); }
+	30%  { transform: scale(1); }
+	40%  { transform: scale(1.08); }
+	50%  { transform: scale(1); }
+	60%  { transform: scale(1); }
+	70%  { transform: scale(1.05); }
+	80%  { transform: scale(1); }
+	100% { transform: scale(1); }
+}
+
+@-moz-keyframes pulseAnimation {
+	0%   { transform: scale(1); }
+	30%  { transform: scale(1); }
+	40%  { transform: scale(1.08); }
+	50%  { transform: scale(1); }
+	60%  { transform: scale(1); }
+	70%  { transform: scale(1.05); }
+	80%  { transform: scale(1); }
+	100% { transform: scale(1); }
+}
+
+@-o-keyframes pulseAnimation {
+	0%   { transform: scale(1); }
+	30%  { transform: scale(1); }
+	40%  { transform: scale(1.08); }
+	50%  { transform: scale(1); }
+	60%  { transform: scale(1); }
+	70%  { transform: scale(1.05); }
+	80%  { transform: scale(1); }
+	100% { transform: scale(1); }
+}
